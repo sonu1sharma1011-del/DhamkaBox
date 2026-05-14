@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --dbox-purple: #1A0533;
+    --dbox-yellow: #FFE600;
+    --dbox-pink: #FF0066;
+    --dbox-dark: #0D0D0D;
+    --dbox-card: #1E1E2E;
+  }
+  
+  body {
+    @apply bg-[#0D0D0D] text-white font-sans;
+  }
+}
