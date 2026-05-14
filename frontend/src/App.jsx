@@ -155,7 +155,8 @@ const PredictionArena = ({ questions, onPredict, onBackToMatch }) => {
     const fetchInsight = async () => {
       setLoading(true);
       try {
-        const response = await fetch('http://localhost:8000/api/personalise', {
+        // Use relative URL so it works in production (Cloud Run)
+        const response = await fetch('/api/personalise', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
